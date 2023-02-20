@@ -11,74 +11,74 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #060b23;
+  background-color: #fffffb;
 }
-.input-field{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    padding: 8px 0;
-    width: 400px;
-    height: auto;
-    border: 1px solid red;
-  }
-  .input-field input{
-     width: 350px;
-    height: 55px;
-    border-radius: 6px;
-    font-size: 14px;
-    padding: 0 15px;
-    border: 2px solid #fff;
-    background: transparent;
-    color: #fff;
-    outline: none;
-  }
-  .input-field label{
-    position: absolute;
-    top: 35%;
-    left: 45px;
-    transform: translateY(-10%);
-    color: #fff;
-    font-size: 15px;
-    pointer-events: none;
-    transition: 0.3s;
-  }
-  input:focus{
-    border: 2px solid #18ffff;
-  }
-  input:focus ~ label,
-  input:valid ~ label{
-    top: 0;
-    left: 43px;
-    font-size: 14px;
-    padding: 0 2px;
-    background: #060b23;
-    
-  }
+.area-Login {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.input-field {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 8px 0;
+  width: 400px;
+  height: auto;
+}
+.input-field input {
+  width: 350px;
+  height: 55px;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 0 15px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+.input-field label {
+  position: absolute;
+  top: 35%;
+  left: 45px;
+  transform: translateY(-10%);
+  color: #fff;
+  font-size: 15px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+input:focus {
+  border: 2px solid #18ffff;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: 0;
+  left: 43px;
+  font-size: 14px;
+  padding: 0 2px;
+  background: #060b23;
+}
 
 h2 {
-    text-align: center;
+  text-align: center;
   color: #cbd0f7;
   background-color: #060b23;
 }
 
 button {
-    
   width: 350px;
-    height: 55px;
+  height: 55px;
   background-color: #5568fe;
-  text-transform: uppercase;
   cursor: pointer;
-  width: 350px;
-    height: 55px;
-    border-radius: 6px;
-    font-size: 14px;
-    padding: 0 15px;
-    border: 2px solid #fff;
-    background: transparent;
-    color: #fff;
-    outline: none;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 0 15px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  margin: 5px 25px;
 }
-input:hover[type="submit"] {
+button:hover[type="submit"] {
   background-color: #5060d3;
 }
