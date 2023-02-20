@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles.css" />
     <title>Document</title>
-</head>
-<body>
-    <section class="area-login">
-        <div class="login">
-            <h2>Vaqui-Net</h2>
-            <form action="validarUsuario.php" method="GET">
-                <input type="text" name="usuario" id="idinmuenbre" placeholder="Ingresa tu usuario">
-                <span id="midinmueble" style="color:red"></span>
-                <input type="text" name="password" id="direccion" placeholder="Ingresa tu contraseña">
-                <span id="midinmueble" style="color:red"></span>
-                <input type="text" name="password" id="telefono" placeholder="Ingresa tu contraseña">
-                <span id="midinmueble" style="color:red"></span>
-                <input type="text" name="password" id="precio" placeholder="Ingresa tu contraseña">
-                <span id="midinmueble" style="color:red"></span>
-                <input type="checkbox" name="password" id="estado" placeholder="Ingresa tu contraseña">
-                <span id="midinmueble" style="color:red"></span>
-                
-                <input type="submit" Value="ingresar" placeholder="Iniciar sesion">
-                <input type="submit" Value="ingresar" placeholder="Iniciar sesion">
-                <input type="submit" Value="ingresar" placeholder="Iniciar sesion">
-            </form>
-        </div>
-    </section>
+  </head>
+  <body>
+    <form class="areaLogin"action="" method="GET" id="formulario">
+      <h2>Vaqui-Net</h2>
+      <div class="input-field">
+        <input type="text" required spellcheck="false" />
+        <label>Nombre</label>
+      </div>
+      <div class="input-field">
+        <input type="text" required spellcheck="false" />
+        <label>Apellido</label>
+      </div>
+      <div class="input-field">
+        <input type="text" required spellcheck="false" />
+        <label>Apellido</label>
+      </div>
+      <div class="input-field">
+        <input type="text" required spellcheck="false" />
+        <label>Apellido</label>
+      </div>
+      <div class="input-field">
+        <input type="text" required spellcheck="false" />
+        <label>Apellido</label>
+      </div>
+
+      <button>Ingresar</button>
+    </form>
+
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
