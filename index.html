@@ -8,18 +8,44 @@
     <title>Document</title>
   </head>
   <body>
-    <form class="areaLogin"action="" method="GET" id="formulario">
+    <form class="areaLogin" action="" method="GET" id="formulario">
       <h2>Vaqui-Net</h2>
       <div class="input-field">
         <input type="text" required spellcheck="false" />
-        <label>Nombre</label>
+        <label>Usuario</label>
       </div>
       <div class="input-field">
         <input type="text" required spellcheck="false" />
-        <label>Apellido</label>
+        <label>Contraseña</label>
       </div>
-      
-      <button>Ingresar</button>
+      <div class="input-field">
+        <!-- <select  name="dep" id="dep" class="dropdown">
+          <option class="select" value="La 33">Seleccione una dependencia</option>
+          <option class="select" value="001">LA 33</option>
+          <option class="select" value="003">POBLADO</option>
+          <option class="select" value="004">RIONEGRO</option>
+          <option class="select" value="007">PRADO</option>
+          <option class="select" value="008">SABANETA PARQUE</option>
+          <option class="select" value="043">SABANETA CENTRAL</option>
+          <option class="select" value="063">SANCRISTOBAL</option>
+          <option class="select" value="ADMINISTRADOR">ADMINISTRADOR</option>
+      </select> -->
+        <div class="select">
+          <span class="selected">Sede</span>
+          <div class="caret"></div>
+          <ul class="menu">
+            <li>La 33</li>
+            <li>Poblado</li>
+            <li>Sabaneta Central</li>
+            <li>Sabaneta Parque</li>
+            <li>Prado</li>
+            <li>San Cristobal</li>
+            <li>Rionegro</li>
+            <li>Administrador</li>
+          </ul>
+        </div>
+      </div>
+      <button class="btn-submit">Ingresar</button>
     </form>
 
     <script src="./app.js"></script>

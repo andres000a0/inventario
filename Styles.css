@@ -7,16 +7,20 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fffffb;
+  height: 100vh;
+  background-color: #e8f5ff;
 }
-.area-Login {
-  position: relative;
-  display: flex;
-  justify-content: center;
+.areaLogin {
+  border-radius: 10px 10px;
+  -webkit-box-shadow: 7px 4px 17px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 4px 17px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 4px 17px 1px #45586b;
+  background-color: #deeaf1;
+  
+  padding-bottom: 15px;
 }
 .input-field {
   display: flex;
@@ -25,6 +29,12 @@ body {
   padding: 8px 0;
   width: 400px;
   height: auto;
+  color: #131a35;
+  border-color: #131a35;
+  
+}
+.input-field * {
+  box-sizing: border-box;
 }
 .input-field input {
   width: 350px;
@@ -32,9 +42,9 @@ body {
   border-radius: 6px;
   font-size: 14px;
   padding: 0 15px;
-  border: 2px solid #fff;
+  border: 2px solid #131a35;
   background: transparent;
-  color: #fff;
+  color: #131a35;
   outline: none;
 }
 .input-field label {
@@ -42,13 +52,13 @@ body {
   top: 35%;
   left: 45px;
   transform: translateY(-10%);
-  color: #fff;
+  color: #131a35;
   font-size: 15px;
   pointer-events: none;
   transition: 0.3s;
 }
 input:focus {
-  border: 2px solid #18ffff;
+  border: 2px solid #45586b;
 }
 input:focus ~ label,
 input:valid ~ label {
@@ -56,29 +66,104 @@ input:valid ~ label {
   left: 43px;
   font-size: 14px;
   padding: 0 2px;
-  background: #060b23;
+  background: #deeaf1;
 }
 
 h2 {
   text-align: center;
-  color: #cbd0f7;
-  background-color: #060b23;
+  color: #131a35;
+  background-color: #deeaf1;
+  padding: 10px 0;
 }
-
-button {
+.select {
+  background: #deeaf1;
+  color: #131a35;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px #131a35 solid;
+  border-radius: 6px;
+  padding: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.select-clicked {
+  border: 2px #131a35 solid;
+  box-shadow: 0 0 0 0.8em #131a35;
+}
+.select:hover{
+  background: #45586b;
+}
+.caret{
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #131a35;
+  transform: 0.3s;
+}
+.caret-rotate {
+  transform: rotate(180deg);
+}
+.menu{
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: #323741;
+  border: 1px #363a43 solid;
+  box-shadow: 0 0.5em 1 em rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+  color: #9fa5b5;
+  position: absolute;
+  top: 3em;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+}
+.menu li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.menu li:hover{
+  background: #45586b;
+}
+.active{
+  background: #363a43;
+}
+.menu-open{
+  display: block;
+  opacity: 1;
+}
+/* .input-field .dropdown {
   width: 350px;
   height: 55px;
-  background-color: #5568fe;
+  border-radius: 6px;
+  font-size: 13px;
+  padding: 0 15px;
+  border: 2px solid #131a35;
+  background: transparent;
+  outline: none;
+} */
+
+.btn-submit {
+  width: 350px;
+  height: 55px;
+  background-color: #131a35;
   cursor: pointer;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 15px;
   padding: 0 15px;
   border: 2px solid #fff;
   background: transparent;
-  color: #fff;
+  border-color: #131a35;
   outline: none;
   margin: 5px 25px;
 }
-button:hover[type="submit"] {
-  background-color: #5060d3;
+.btn-submit:hover {
+  background-color: #45586b;
 }

@@ -1,34 +1,14 @@
-const inmueble = [
-  {
-    idInmbuenbre: "01",
-    direccion: "calle 4",
-    telefono: 123456,
-    precio: "200",
-    estado: true,
-  },
-  {
-    idInmbuenbre: "02",
-    direccion: "calle 4",
-    telefono: 123456,
-    precio: "250",
-    estado: false,
-  },
-  {
-    idInmbuenbre: "03",
-    direccion: "calle 4",
-    telefono: 123456,
-    precio: "200",
-    estado: true,
-  },
-  {
-    idInmbuenbre: "04",
-    direccion: "calle 4",
-    telefono: 123456,
-    precio: "300",
-    estado: true,
-  },
-];
+const dropdowns = document.getElementById('.input-field')
 
+dropdowns.forEach(dropdown => {
+  const select = dropdown.querySelector('.select')
+  const caret = dropdown.querySelector('.caret')
+  const menu = dropdown.querySelector('.menu')
+  const selected = dropdown.querySelector('.selected')
 
+  select.addEventListener('click', ()=>{
+    select.class
+  })
+})
 
 
