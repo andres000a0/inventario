@@ -75,7 +75,7 @@ h2 {
   background-color: #deeaf1;
   padding: 10px 0;
 }
-.select {
+.select{
   background: #deeaf1;
   color: #131a35;
   display: flex;
@@ -87,8 +87,8 @@ h2 {
   cursor: pointer;
   transition: background 0.3s;
 }
-.select-clicked {
-  border: 2px #131a35 solid;
+.select-clicked{
+  border: 1px #131a35 solid;
   box-shadow: 0 0 0 0.8em #131a35;
 }
 .select:hover{
@@ -110,8 +110,8 @@ h2 {
   padding: 0.2em 0.5em;
   background: #323741;
   border: 1px #363a43 solid;
-  box-shadow: 0 0.5em 1 em rgba(0, 0, 0, 0.2);
-  border-radius: 0.5em;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+  border-radius: 0.1em;
   color: #9fa5b5;
   position: absolute;
   top: 3em;
@@ -121,12 +121,12 @@ h2 {
   opacity: 0;
   display: none;
   transition: 0.2s;
-  z-index: 1;
+  z-index: 1px;
 }
 .menu li {
   padding: 0.7em 0.5em;
   margin: 0.3em 0;
-  border-radius: 0.5em;
+  border-radius: 0.1em;
   cursor: pointer;
 }
 .menu li:hover{
@@ -136,7 +136,7 @@ h2 {
   background: #363a43;
 }
 .menu-open{
-  display: block;
+  display: inline-block;
   opacity: 1;
 }
 /* .input-field .dropdown {
