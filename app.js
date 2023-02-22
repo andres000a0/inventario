@@ -24,8 +24,7 @@ dropdowns.forEach((dropdown) => {
       opciones.forEach((opcion) => {
         opcion.classList.remove("active");
       });
-      opcion.classList.add("active");
-      opcion.classList.remove("menu-open")
+      // opcion.classList.add("active");
     });
   });
 });

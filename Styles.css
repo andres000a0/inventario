@@ -77,7 +77,7 @@ h2 {
 .dropdown {
   box-sizing: border-box;
   padding: 0 25px;
-}
+} 
 .select{
   background: #deeaf1;
   color: #131a35;
@@ -90,10 +90,10 @@ h2 {
   cursor: pointer;
   transition: background 0.3s;
 }
-.select-clicked{
+ .select-clicked{
   border: 1px #131a35 solid;
-  box-shadow: 0 0 0 0.8em #131a35;
-}
+  box-shadow: 0 0 0 0.2em #131a35;
+} 
 .select:hover{
   background: #45586b;
 }
