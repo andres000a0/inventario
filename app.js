@@ -1,4 +1,4 @@
-const dropdowns = document.querySelectorAll(".input-field");
+const dropdowns = document.querySelectorAll(".dropdown");
 
 dropdowns.forEach((dropdown) => {
   const selecte = dropdown.querySelector(".select");
@@ -7,7 +7,7 @@ dropdowns.forEach((dropdown) => {
   const selected = dropdown.querySelector(".selected");
   const opciones = dropdown.querySelectorAll(".menu li");
 
-  document.addEventListener("click", function() {
+  selecte.addEventListener("click", ()=> {
     selecte.classList.toggle("select-clicked");
     caret.classList.toggle("caret-rotate");
     menu.classList.toggle("menu-open");
@@ -25,6 +25,7 @@ dropdowns.forEach((dropdown) => {
         opcion.classList.remove("active");
       });
       opcion.classList.add("active");
+      opcion.classList.remove("menu-open")
     });
   });
 });

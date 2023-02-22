@@ -14,7 +14,6 @@ body {
   background-color: #e8f5ff;
 }
 .areaLogin {
-  border-radius: 10px 10px;
   -webkit-box-shadow: 7px 4px 17px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 7px 4px 17px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 7px 4px 17px 1px #45586b;
@@ -33,7 +32,7 @@ body {
   border-color: #131a35;
   
 }
-.input-field * {
+.dropdown {
   box-sizing: border-box;
 }
 .input-field input {
@@ -75,6 +74,10 @@ h2 {
   background-color: #deeaf1;
   padding: 10px 0;
 }
+.dropdown {
+  box-sizing: border-box;
+  padding: 0 25px;
+}
 .select{
   background: #deeaf1;
   color: #131a35;
@@ -111,12 +114,12 @@ h2 {
   background: #323741;
   border: 1px #363a43 solid;
   box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
-  border-radius: 0.1em;
+  border-radius: 0.2em;
   color: #9fa5b5;
   position: absolute;
-  top: 3em;
+  top: 25rem;
   left: 50%;
-  width: 100%;
+  width: 25%;
   transform: translateX(-50%);
   opacity: 0;
   display: none;
