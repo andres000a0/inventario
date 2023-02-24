@@ -18,7 +18,7 @@ body {
   -moz-box-shadow: 7px 4px 17px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 7px 4px 17px 1px #45586b;
   background-color: #deeaf1;
-  
+  border-radius: 5px;
   padding-bottom: 15px;
 }
 .input-field {
@@ -71,7 +71,6 @@ input:valid ~ label {
 h2 {
   text-align: center;
   color: #131a35;
-  background-color: #deeaf1;
   padding: 10px 0;
 }
 .dropdown {
@@ -139,7 +138,7 @@ h2 {
   background: #363a43;
 }
 .menu-open{
-  display: inline-block;
+  display: block;
   opacity: 1;
 }
 /* .input-field .dropdown {
